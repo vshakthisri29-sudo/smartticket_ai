@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-09-22T19:19:48.467250",
+  "total_tickets": 1500,
+  "random_seed": 42,
+  "categories": {
+    "Delivery": 270,
+    "Payment": 261,
+    "Product": 254,
+    "Refund": 247,
+    "Technical": 240,
+    "Account": 228
+  },
+  "priorities": {
+    "Medium": 541,
+    "High": 468,
+    "Low": 297,
+    "Critical": 194
+  },
+  "emotions": {
+    "Neutral": 454,
+    "Frustrated": 431,
+    "Angry": 320,
+    "Worried": 217,
+    "Satisfied": 78
+  },
+  "resolution_statuses": {
+    "Open": 507,
+    "In Progress": 334,
+    "Resolved": 304,
+    "Under Review": 296,
+    "Escalated": 59
+  },
+  "features": [
+    "ticket_id",
+    "customer_id",
+    "ticket_text",
+    "category",
+    "priority",
+    "emotion",
+    "created_at",
+    "resolution_status",
+    "previous_ticket_id"
+  ]
+}

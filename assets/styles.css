@@ -1,0 +1,397 @@
+/* SmartTicket AI - Human-Crafted Enterprise Web Application Design System */
+/* Clean White Background with Vibrant Colorful Accents & Micro-Animations */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+    --bg-main: #F8FAFC;
+    --bg-surface: #FFFFFF;
+    --border-color: #E2E8F0;
+    --border-hover: #CBD5E1;
+    --text-primary: #0F172A;
+    --text-secondary: #334155;
+    --text-muted: #64748B;
+    
+    /* Vibrant Human Palette */
+    --indigo-primary: #4F46E5;
+    --indigo-hover: #4338CA;
+    --purple-vibrant: #7C3AED;
+    --teal-vibrant: #0D9488;
+    --sky-vibrant: #0284C7;
+    --emerald-vibrant: #10B981;
+    --amber-vibrant: #F59E0B;
+    --rose-vibrant: #E11D48;
+    
+    --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+html, body, [class*="css"] {
+    font-family: var(--font-family) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Background Atmosphere - Clean Crisp White with Subtle Ambient Gradient */
+.stApp {
+    background: #F8FAFC !important;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(79, 70, 229, 0.03) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.04) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(16, 185, 129, 0.03) 0px, transparent 50%) !important;
+}
+
+/* ==============================================================================
+   COLORFUL BUTTONS (HUMAN CRAFTED, VIBRANT, TACTILE)
+   ============================================================================== */
+
+/* Primary Action Buttons */
+div[data-testid="stButton"] button[kind="primary"] {
+    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    padding: 0.62rem 1.4rem !important;
+    box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35) !important;
+    transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+div[data-testid="stButton"] button[kind="primary"]:hover {
+    background: linear-gradient(135deg, #4338CA 0%, #6D28D9 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 22px rgba(79, 70, 229, 0.45) !important;
+}
+
+div[data-testid="stButton"] button[kind="primary"]:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3) !important;
+}
+
+/* Secondary Buttons */
+div[data-testid="stButton"] button[kind="secondary"] {
+    background: #FFFFFF !important;
+    border: 1.5px solid #CBD5E1 !important;
+    color: #1E293B !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    font-size: 0.92rem !important;
+    padding: 0.58rem 1.2rem !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03) !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+div[data-testid="stButton"] button[kind="secondary"]:hover {
+    border-color: #4F46E5 !important;
+    color: #4F46E5 !important;
+    background: #EEF2FF !important;
+    transform: translateY(-1.5px) !important;
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.15) !important;
+}
+
+/* ==============================================================================
+   CARDS & CONTAINERS
+   ============================================================================== */
+
+/* Modern White Card Container */
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05), 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+    padding: 24px !important;
+    transition: all 0.2s ease !important;
+}
+
+[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    border-color: #CBD5E1 !important;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08) !important;
+}
+
+.saas-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+    transition: all 0.2s ease-in-out;
+}
+
+.saas-card:hover {
+    border-color: #CBD5E1;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.07);
+}
+
+/* Auth / Login Hero Container */
+.login-hero {
+    text-align: center;
+    max-width: 640px;
+    margin: 40px auto 28px auto;
+}
+
+/* ==============================================================================
+   METRIC DISPLAY CARDS (COLORFUL ACCENT TOPS)
+   ============================================================================== */
+.metric-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+    margin: 18px 0;
+}
+
+.metric-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-top: 3.5px solid #4F46E5;
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+}
+
+.metric-card-title {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+}
+
+.metric-card-value {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.02em;
+}
+
+.metric-card-subtitle {
+    font-size: 0.8rem;
+    color: #4F46E5;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+/* ==============================================================================
+   ALL INPUT BOXES: SOLID WHITE COLOR WITH DEEP BLACK WORDS & LABELS
+   ============================================================================== */
+
+/* Input Labels (The words describing each input box) */
+div[data-testid="stWidgetLabel"] label,
+div[data-testid="stWidgetLabel"] p,
+div[data-testid="stWidgetLabel"] span {
+    color: #000000 !important;
+    font-weight: 700 !important;
+    font-size: 0.94rem !important;
+    letter-spacing: -0.01em !important;
+}
+
+/* All Input Containers (BaseWeb wrappers) */
+div[data-baseweb="input"],
+div[data-baseweb="base-input"],
+div[data-baseweb="textarea"],
+div[data-baseweb="select"],
+div[data-baseweb="select"] > div,
+div[data-testid="stTextInput"] > div,
+div[data-testid="stTextArea"] > div,
+div[data-testid="stSelectbox"] > div {
+    background-color: #FFFFFF !important;
+    border: 1.5px solid #94A3B8 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04) !important;
+    transition: all 0.2s ease !important;
+}
+
+div[data-baseweb="input"]:focus-within,
+div[data-baseweb="textarea"]:focus-within,
+div[data-baseweb="select"]:focus-within,
+div[data-baseweb="base-input"]:focus-within {
+    border-color: #4F46E5 !important;
+    background-color: #FFFFFF !important;
+    box-shadow: 0 0 0 3.5px rgba(79, 70, 229, 0.16) !important;
+}
+
+/* Text inside all Inputs and TextAreas (Typed words in SOLID BLACK) */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+textarea,
+div[data-baseweb="input"] input,
+div[data-baseweb="base-input"] input,
+div[data-baseweb="textarea"] textarea,
+div[data-testid="stTextInput"] input,
+div[data-testid="stTextArea"] textarea {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    font-family: var(--font-family) !important;
+}
+
+/* Placeholder words inside Inputs and Textareas */
+input::placeholder,
+textarea::placeholder,
+div[data-baseweb="input"] input::placeholder,
+div[data-baseweb="textarea"] textarea::placeholder {
+    color: #475569 !important;
+    -webkit-text-fill-color: #475569 !important;
+    opacity: 1 !important;
+    font-weight: 400 !important;
+}
+
+/* Selectbox Dropdowns and Selected Values */
+div[data-baseweb="select"] span,
+div[data-baseweb="select"] div,
+div[data-baseweb="select"] input {
+    color: #000000 !important;
+    font-weight: 600 !important;
+    background-color: #FFFFFF !important;
+}
+
+/* Dropdown popover list items */
+ul[role="listbox"] {
+    background-color: #FFFFFF !important;
+    border: 1.5px solid #CBD5E1 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1) !important;
+}
+
+ul[role="listbox"] li {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-weight: 500 !important;
+    padding: 8px 14px !important;
+}
+
+ul[role="listbox"] li:hover,
+ul[role="listbox"] li[aria-selected="true"] {
+    background-color: #EEF2FF !important;
+    color: #4F46E5 !important;
+}
+
+/* File Uploader Box */
+div[data-testid="stFileUploader"] section {
+    background-color: #FFFFFF !important;
+    border: 2px dashed #94A3B8 !important;
+    border-radius: 12px !important;
+}
+
+div[data-testid="stFileUploader"] section * {
+    color: #000000 !important;
+}
+
+/* ==============================================================================
+   STREAMLIT NAVIGATION / RADIO TABS (COLORFUL PILLS)
+   ============================================================================== */
+div[data-testid="stRadio"] > div[role="radiogroup"] {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 6px;
+    gap: 8px;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.03);
+}
+
+div[data-testid="stRadio"] label {
+    background: transparent !important;
+    border-radius: 8px !important;
+    padding: 6px 14px !important;
+    font-weight: 600 !important;
+    color: #475569 !important;
+    transition: all 0.2s ease !important;
+}
+
+div[data-testid="stRadio"] label:hover {
+    color: #4F46E5 !important;
+    background: #EEF2FF !important;
+}
+
+/* ==============================================================================
+   BADGES & CLASSIFICATION HIGHLIGHTS (RICH VIBRANT PASTELS)
+   ============================================================================== */
+.prediction-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.badge-payment { background: #DBEAFE; color: #1D4ED8; border: 1px solid #93C5FD; }
+.badge-technical { background: #F3E8FF; color: #7E22CE; border: 1px solid #D8B4FE; }
+.badge-delivery { background: #FEF3C7; color: #B45309; border: 1px solid #FCD34D; }
+.badge-account { background: #CCFBF1; color: #0F766E; border: 1px solid #5EEAD4; }
+.badge-refund { background: #FFE4E6; color: #BE123C; border: 1px solid #FDA4AF; }
+.badge-product { background: #E0E7FF; color: #4338CA; border: 1px solid #A5B4FC; }
+
+/* XAI Token Highlights */
+.token-tag {
+    background: #EEF2FF;
+    border: 1px solid #C7D2FE;
+    color: #3730A3;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    margin: 3px;
+    display: inline-block;
+    font-family: var(--font-mono);
+}
+
+/* ==============================================================================
+   SPLASH SCREEN (CLEAN WHITE WITH PULSING VIBRANT GRADIENT LOGO)
+   ============================================================================== */
+.splash-logo-circle {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.12) 0%, rgba(6, 182, 212, 0.15) 100%);
+    border: 2.5px solid #4F46E5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.2rem;
+    box-shadow: 0 8px 32px rgba(79, 70, 229, 0.25), inset 0 0 20px rgba(6, 182, 212, 0.2);
+    animation: pulseGlowLight 2.4s infinite ease-in-out alternate;
+}
+
+@keyframes pulseGlowLight {
+    0% { transform: scale(1); box-shadow: 0 6px 24px rgba(79, 70, 229, 0.2), inset 0 0 15px rgba(6, 182, 212, 0.15); }
+    100% { transform: scale(1.08); box-shadow: 0 12px 42px rgba(124, 58, 237, 0.35), inset 0 0 25px rgba(79, 70, 229, 0.3); }
+}
+
+/* Glowing Multi-Color Streamlit Progress Bar */
+.stProgress > div > div > div > div {
+    background: linear-gradient(90deg, #4F46E5 0%, #06B6D4 50%, #10B981 100%) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 10px rgba(79, 70, 229, 0.4) !important;
+}
+
+.stProgress > div > div > div {
+    background: #E2E8F0 !important;
+    border-radius: 10px !important;
+    height: 7px !important;
+    border: none !important;
+}
+
+/* Headings Crisp Dark */
+h1, h2, h3, h4, h5, h6 {
+    color: #0F172A !important;
+    font-family: var(--font-family) !important;
+    font-weight: 800 !important;
+}
+
+p, span, label {
+    color: #334155;
+}
