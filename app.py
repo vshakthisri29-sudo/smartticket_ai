@@ -1,6 +1,13 @@
 import os
+import sys
 import time
 import json
+
+# Ensure repository root is on sys.path for cloud deployment (Streamlit Cloud, Render, HuggingFace)
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+if CURRENT_DIR not in sys.path:
+    sys.path.insert(0, CURRENT_DIR)
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
